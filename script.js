@@ -212,9 +212,9 @@ window.addEventListener('load', () => {
     typeWriter(heroTitle, originalText, 80);
 });
 
-// Add floating animation to motorcycle icons
-document.querySelectorAll('.motorcycle-icon i').forEach((icon, index) => {
-    icon.style.animation = `float 3s ease-in-out infinite ${index * 0.5}s`;
+// Add floating animation to motorcycle images
+document.querySelectorAll('.motorcycle-image').forEach((image, index) => {
+    image.style.animation = `float 3s ease-in-out infinite ${index * 0.5}s`;
 });
 
 // Initialize animations when DOM is loaded
