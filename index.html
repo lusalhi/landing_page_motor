@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motor Berkualitas - Promo Spesial</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-motorcycle"></i>
+                    <span>MotorPro</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#products">Produk</a></li>
+                    <li><a href="#promo">Promo</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Motor Berkualitas dengan Harga Terbaik</h1>
+                <p class="hero-subtitle">Dapatkan motor impian Anda dengan promo spesial dan cicilan ringan. Kualitas terjamin, harga bersahabat.</p>
+                <div class="hero-buttons">
+                    <a href="#products" class="btn btn-primary">Lihat Produk</a>
+                    <a href="#promo" class="btn btn-secondary">Promo Spesial</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="motorcycle-illustration">
+                    <i class="fas fa-motorcycle"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promo Banner -->
+    <section class="promo-banner">
+        <div class="container">
+            <div class="promo-content">
+                <h2><i class="fas fa-fire"></i> Promo Terbatas!</h2>
+                <p>Diskon hingga 30% + Cicilan 0% untuk 6 bulan pertama</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <div class="section-header">
+                <h2>Koleksi Motor Terbaik</h2>
+                <p>Pilihan motor berkualitas dengan teknologi terdepan</p>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card" data-product="Honda Vario 160">
+                    <div class="product-image">
+                        <div class="motorcycle-icon">
+                            <i class="fas fa-motorcycle"></i>
+                        </div>
+                        <div class="discount-badge">
+                            <span>25% OFF</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Honda Vario 160</h3>
+                        <div class="price">
+                            <span class="price-old">Rp 28.000.000</span>
+                            <span class="price-new">Rp 21.000.000</span>
+                        </div>
+                        <p class="description">Motor matic premium dengan teknologi eSP+ dan desain sporty yang elegan. Cocok untuk perjalanan harian yang nyaman.</p>
+                        <div class="features">
+                            <span><i class="fas fa-gas-pump"></i> Hemat BBM</span>
+                            <span><i class="fas fa-cog"></i> Automatic</span>
+                            <span><i class="fas fa-shield-alt"></i> Garansi 3 Tahun</span>
+                        </div>
+                        <button class="btn-buy" onclick="buyProduct('Honda Vario 160', 'Rp 21.000.000')">
+                            <i class="fab fa-whatsapp"></i> Beli Sekarang
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card" data-product="Yamaha NMAX 155">
+                    <div class="product-image">
+                        <div class="motorcycle-icon">
+                            <i class="fas fa-motorcycle"></i>
+                        </div>
+                        <div class="discount-badge">
+                            <span>20% OFF</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Yamaha NMAX 155</h3>
+                        <div class="price">
+                            <span class="price-old">Rp 32.000.000</span>
+                            <span class="price-new">Rp 25.600.000</span>
+                        </div>
+                        <p class="description">Skutik premium dengan performa tinggi dan fitur canggih. Dilengkapi dengan Smart Key System dan LED lighting.</p>
+                        <div class="features">
+                            <span><i class="fas fa-key"></i> Smart Key</span>
+                            <span><i class="fas fa-lightbulb"></i> Full LED</span>
+                            <span><i class="fas fa-tachometer-alt"></i> Digital Panel</span>
+                        </div>
+                        <button class="btn-buy" onclick="buyProduct('Yamaha NMAX 155', 'Rp 25.600.000')">
+                            <i class="fab fa-whatsapp"></i> Beli Sekarang
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card" data-product="Honda PCX 160">
+                    <div class="product-image">
+                        <div class="motorcycle-icon">
+                            <i class="fas fa-motorcycle"></i>
+                        </div>
+                        <div class="discount-badge">
+                            <span>30% OFF</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Honda PCX 160</h3>
+                        <div class="price">
+                            <span class="price-old">Rp 35.000.000</span>
+                            <span class="price-new">Rp 24.500.000</span>
+                        </div>
+                        <p class="description">Skutik premium dengan teknologi hybrid terdepan. Desain mewah dan performa yang efisien untuk mobilitas modern.</p>
+                        <div class="features">
+                            <span><i class="fas fa-leaf"></i> Hybrid Engine</span>
+                            <span><i class="fas fa-mobile-alt"></i> Honda SMART Key</span>
+                            <span><i class="fas fa-usb"></i> USB Charging</span>
+                        </div>
+                        <button class="btn-buy" onclick="buyProduct('Honda PCX 160', 'Rp 24.500.000')">
+                            <i class="fab fa-whatsapp"></i> Beli Sekarang
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card" data-product="Yamaha Aerox 155">
+                    <div class="product-image">
+                        <div class="motorcycle-icon">
+                            <i class="fas fa-motorcycle"></i>
+                        </div>
+                        <div class="discount-badge">
+                            <span>15% OFF</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Yamaha Aerox 155</h3>
+                        <div class="price">
+                            <span class="price-old">Rp 27.000.000</span>
+                            <span class="price-new">Rp 22.950.000</span>
+                        </div>
+                        <p class="description">Maxi scooter sporty dengan performa tinggi dan desain agresif. Cocok untuk anak muda yang dinamis.</p>
+                        <div class="features">
+                            <span><i class="fas fa-bolt"></i> VVA Engine</span>
+                            <span><i class="fas fa-mobile-alt"></i> Y-Connect</span>
+                            <span><i class="fas fa-stopwatch"></i> Sport Mode</span>
+                        </div>
+                        <button class="btn-buy" onclick="buyProduct('Yamaha Aerox 155', 'Rp 22.950.000')">
+                            <i class="fab fa-whatsapp"></i> Beli Sekarang
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card" data-product="Honda Beat Street">
+                    <div class="product-image">
+                        <div class="motorcycle-icon">
+                            <i class="fas fa-motorcycle"></i>
+                        </div>
+                        <div class="discount-badge">
+                            <span>20% OFF</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Honda Beat Street</h3>
+                        <div class="price">
+                            <span class="price-old">Rp 18.000.000</span>
+                            <span class="price-new">Rp 14.400.000</span>
+                        </div>
+                        <p class="description">Skutik compact dengan desain street style. Ideal untuk perjalanan dalam kota dengan konsumsi BBM yang irit.</p>
+                        <div class="features">
+                            <span><i class="fas fa-city"></i> Urban Style</span>
+                            <span><i class="fas fa-gas-pump"></i> Super Irit</span>
+                            <span><i class="fas fa-tools"></i> Low Maintenance</span>
+                        </div>
+                        <button class="btn-buy" onclick="buyProduct('Honda Beat Street', 'Rp 14.400.000')">
+                            <i class="fab fa-whatsapp"></i> Beli Sekarang
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card" data-product="Yamaha Mio M3 125">
+                    <div class="product-image">
+                        <div class="motorcycle-icon">
+                            <i class="fas fa-motorcycle"></i>
+                        </div>
+                        <div class="discount-badge">
+                            <span>18% OFF</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Yamaha Mio M3 125</h3>
+                        <div class="price">
+                            <span class="price-old">Rp 17.500.000</span>
+                            <span class="price-new">Rp 14.350.000</span>
+                        </div>
+                        <p class="description">Skutik stylish dengan fitur modern dan harga terjangkau. Pilihan tepat untuk mobilitas sehari-hari yang ekonomis.</p>
+                        <div class="features">
+                            <span><i class="fas fa-heart"></i> Stylish Design</span>
+                            <span><i class="fas fa-dollar-sign"></i> Ekonomis</span>
+                            <span><i class="fas fa-wrench"></i> Easy Maintenance</span>
+                        </div>
+                        <button class="btn-buy" onclick="buyProduct('Yamaha Mio M3 125', 'Rp 14.350.000')">
+                            <i class="fab fa-whatsapp"></i> Beli Sekarang
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Mengapa Pilih Kami?</h2>
+                <p>Keunggulan yang membuat kami menjadi pilihan terbaik</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Kualitas Terjamin</h3>
+                    <p>Semua motor telah melalui quality control ketat dan bergaransi resmi</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3>Cicilan Ringan</h3>
+                    <p>Tersedia berbagai pilihan cicilan dengan bunga kompetitif mulai dari 0%</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Service Berkala</h3>
+                    <p>Layanan service dan maintenance terjadwal dengan teknisi berpengalaman</p>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h3>Pengiriman Cepat</h3>
+                    <p>Proses pengiriman motor cepat ke seluruh Indonesia dengan asuransi</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Hubungi Kami</h2>
+                    <p>Tim kami siap membantu Anda menemukan motor yang tepat</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fab fa-whatsapp"></i>
+                            <div>
+                                <h4>WhatsApp</h4>
+                                <p>+62 812-3456-7890</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>info@motorpro.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Alamat</h4>
+                                <p>Jl. Motor Raya No. 123, Jakarta</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-cta">
+                    <h3>Siap untuk membeli motor impian Anda?</h3>
+                    <p>Dapatkan konsultasi gratis dan penawaran terbaik dari tim kami</p>
+                    <button class="btn btn-primary" onclick="contactWhatsApp()">
+                        <i class="fab fa-whatsapp"></i> Chat WhatsApp
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <i class="fas fa-motorcycle"></i>
+                        <span>MotorPro</span>
+                    </div>
+                    <p>Solusi terpercaya untuk kebutuhan motor berkualitas dengan harga terbaik.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Menu</h4>
+                    <ul>
+                        <li><a href="#home">Beranda</a></li>
+                        <li><a href="#products">Produk</a></li>
+                        <li><a href="#promo">Promo</a></li>
+                        <li><a href="#contact">Kontak</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h4>Ikuti Kami</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 MotorPro. Semua hak cipta dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
